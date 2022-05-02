@@ -32,5 +32,14 @@ module.exports = {
     "object-curly-spacing": "off",
     "@typescript-eslint/no-var-requires": 0,
     "curly": 0,
+    "require-jsdoc": ["error", {
+            "require": {
+                "FunctionDeclaration": true,
+                "MethodDefinition": false,
+                "ClassDeclaration": false,
+                "ArrowFunctionExpression": false,
+                "FunctionExpression": false,
+            },
+        }],
   },
 };
